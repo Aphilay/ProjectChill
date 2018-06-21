@@ -25,7 +25,7 @@ public class MainMenu extends AppCompatActivity {
         //setToggleEvent(mainGrid);
     }
 
-//    From Kyle's branch
+//    From Kyle's branch, this is a demo
 //    From a tutorial done, don't worry about it
 //    private void setToggleEvent(GridLayout mainGrid) {
 //        //Loop all child item of Main Grid
