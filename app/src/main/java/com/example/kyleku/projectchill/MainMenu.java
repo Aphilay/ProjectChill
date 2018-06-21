@@ -59,7 +59,6 @@ public class MainMenu extends AppCompatActivity {
                 public void onClick(View view) {
 
                     Intent intent = new Intent(MainMenu.this,Blank.class);
-                    //intent.putExtra("info","This is activity from card item index  "+finalI);
                     startActivity(intent);
 
                 }
