@@ -31,7 +31,7 @@ public class MainMenu extends AppCompatActivity {
         button_fs.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
 
-                // Start NewActivity.class
+                // Start Blank.class
                 Intent myIntent = new Intent(MainMenu.this,
                         Blank.class);
                 startActivity(myIntent);
@@ -45,7 +45,7 @@ public class MainMenu extends AppCompatActivity {
         button_mp.setOnClickListener(new OnClickListener() {
             public void onClick(View arg0) {
 
-                // Start NewActivity.class
+                // Start Blank.class
                 Intent myIntent = new Intent(MainMenu.this,
                         Blank.class);
                 startActivity(myIntent);
