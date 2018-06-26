@@ -6,55 +6,52 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.GridView;
+import android.widget.TextView;
+import android.view.View.OnClickListener;
 
 public class MainMenu extends AppCompatActivity {
 
-    GridLayout mainGrid;
+    private Button button_fs;
+    private Button button_mp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Get the view from activity_main.xml
         setContentView(R.layout.activity_main_menu);
 
-        mainGrid = (GridLayout) findViewById(R.id.mainGrid);
+        // Locate the button in activity_main.xml
+        button_fs = (Button) findViewById(R.id.fs_button);
 
-        //Set Event
-        setSingleEvent(mainGrid);
-        //setToggleEvent(mainGrid);
+        // Capture button clicks
+        button_fs.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start Blank.class
+                Intent myIntent = new Intent(MainMenu.this,
+                        Blank.class);
+                startActivity(myIntent);
+            }
+        });
+
+        // Locate the button in activity_main.xml
+        button_mp = (Button) findViewById(R.id.mp_button);
+
+        // Capture button clicks
+        button_mp.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+
+                // Start Blank.class
+                Intent myIntent = new Intent(MainMenu.this,
+                        Blank.class);
+                startActivity(myIntent);
+            }
+        });
+
     }
-    
 
-
-    private void setSingleEvent(GridLayout mainGrid) {
-        //Loop all child item of Main Grid
-        for (int i = 0; i < mainGrid.getChildCount(); i++) {
-            //You can see , all child item is CardView , so we just cast object to CardView
-            CardView cardView1 = (CardView) mainGrid.getChildAt(i);
-            CardView cardView2 = (CardView) mainGrid.getChildAt(i);
-
-
-            cardView1.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    Intent intent = new Intent(MainMenu.this,Blank.class);
-                    startActivity(intent);
-
-                }
-            });
-
-
-            cardView2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-
-                    Intent intent = new Intent(MainMenu.this,GameActivity.class);
-                    startActivity(intent);
-
-                }
-            });
-        }
-    }
 }
