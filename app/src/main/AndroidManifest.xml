@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Blank"></activity>
+        <activity android:name=".Blank" />
+        <activity android:name=".GameActivity" />
+        <activity android:name=".HighScoreActivity" />
+        <activity android:name=".ReturnActivity"></activity>
     </application>
 
 </manifest>

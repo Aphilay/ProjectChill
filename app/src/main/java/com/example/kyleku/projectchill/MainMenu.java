@@ -25,41 +25,32 @@ public class MainMenu extends AppCompatActivity {
         //setToggleEvent(mainGrid);
     }
     
-//    From a tutorial done, don't worry about it
-//    private void setToggleEvent(GridLayout mainGrid) {
-//        //Loop all child item of Main Grid
-//        for (int i = 0; i < mainGrid.getChildCount(); i++) {
-//            //You can see , all child item is CardView , so we just cast object to CardView
-//            final CardView cardView = (CardView) mainGrid.getChildAt(i);
-//            cardView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View view) {
-//                    if (cardView.getCardBackgroundColor().getDefaultColor() == -1) {
-//                        //Change background color
-//                        cardView.setCardBackgroundColor(Color.parseColor("#FF6F00"));
-//                        Toast.makeText(MainMenu.this, "State : True", Toast.LENGTH_SHORT).show();
-//
-//                    } else {
-//                        //Change background color
-//                        cardView.setCardBackgroundColor(Color.parseColor("#FFFFFF"));
-//                        Toast.makeText(MainMenu.this, "State : False", Toast.LENGTH_SHORT).show();
-//                    }
-//                }
-//            });
-//        }
-//    }
+
 
     private void setSingleEvent(GridLayout mainGrid) {
         //Loop all child item of Main Grid
         for (int i = 0; i < mainGrid.getChildCount(); i++) {
             //You can see , all child item is CardView , so we just cast object to CardView
-            CardView cardView = (CardView) mainGrid.getChildAt(i);
-            final int finalI = i;
-            cardView.setOnClickListener(new View.OnClickListener() {
+            CardView cardView1 = (CardView) mainGrid.getChildAt(i);
+            CardView cardView2 = (CardView) mainGrid.getChildAt(i);
+
+
+            cardView1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
 
                     Intent intent = new Intent(MainMenu.this,Blank.class);
+                    startActivity(intent);
+
+                }
+            });
+
+
+            cardView2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(MainMenu.this,GameActivity.class);
                     startActivity(intent);
 
                 }
