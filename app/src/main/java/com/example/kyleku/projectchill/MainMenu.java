@@ -59,7 +59,7 @@ public class MainMenu extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
 
-                    Intent intent = new Intent(MainMenu.this,Blank.class);
+                    Intent intent = new Intent(MainMenu.this,MainMusicActivity.class);
                     startActivity(intent);
 
                 }
