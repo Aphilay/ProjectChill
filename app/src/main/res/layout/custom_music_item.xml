@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -21,7 +22,7 @@
         android:layout_alignStart="@+id/txtSinger"
         android:layout_marginTop="5dp"
         android:text="Song name"
-        android:textColor="#7019c1"
+        android:textColor="#77abc1"
         android:textSize="20sp" />
 
     <TextView
@@ -35,7 +36,7 @@
         android:layout_toEndOf="@+id/ivMusic"
         android:layout_toRightOf="@+id/ivMusic"
         android:text="Singer"
-        android:textColor="#259e06"
+        android:textColor="#c1cac2"
         android:textSize="18sp" />
 
     <ImageView
