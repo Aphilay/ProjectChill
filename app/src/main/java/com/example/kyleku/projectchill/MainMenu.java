@@ -33,7 +33,7 @@ public class MainMenu extends AppCompatActivity {
 
                 // Start Blank.class
                 Intent myIntent = new Intent(MainMenu.this,
-                        Blank.class);
+                        GameActivity.class);
                 startActivity(myIntent);
             }
         });

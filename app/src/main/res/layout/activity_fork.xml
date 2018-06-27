@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ForkActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:src="@drawable/ice"
+        />
+
+    <Button
+        android:id="@+id/survey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignTop="@+id/main_menu"
+        android:layout_marginStart="66dp"
+        android:text="Survey"
+        android:backgroundTint="#ffffff"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="450dp"
+        />
+
+    <Button
+        android:id="@+id/main_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="42dp"
+        android:backgroundTint="#ffffff"
+        android:onClick="mainMenuButton"
+        android:text="Main Menu" />
+
+</RelativeLayout>
