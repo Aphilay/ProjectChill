@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/Psstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#77abc1"
+            android:text="Precived Stress Scale"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Question1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp"
+        android:textColor="#77abc1"
+        android:text="1.) In the last month, how often have you felt that you were unable to control the important things in your life?  "
+        android:textSize="15dp" />
+
+    <SeekBar
+        android:id="@+id/simpleSeekBar1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:padding="8dp" /><!-- set 5 maximum value for the progress -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="40dp"
+            android:padding="8dp"
+            android:text="Back"
+            android:textColor="#77abc1"
+
+            />
+
+
+        <Button
+            android:id="@+id/Next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:textColor="#77abc1"
+            android:text="next" />
+
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="87dp"
+            android:padding="8dp"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
