@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textColor="#77abc1"
+            android:text="Precived Stress Scale"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Question1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp"
+        android:textColor="#77abc1"
+        android:text=  "3.) In the last month, how often have you felt that things were going your way"
+        android:textSize="15dp" />
+
+    <SeekBar
+        android:id="@+id/simpleSeekBar3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="5"
+        android:padding="8dp"
+        android:progress="1"
+        /><!-- set 5 maximum value for the progress -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/Back3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_alignParentLeft="true"
+            android:textColor="#77abc1"
+            android:padding="8dp"
+            android:text="Prev"
+
+            />
+
+
+        <Button
+            android:id="@+id/Next3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:text="next"
+            android:textColor="#77abc1"
+
+            />
+
+        <TextView
+            android:id="@+id/test3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="87dp"
+            android:padding="8dp"
+            android:textColor="#77abc1"
+            android:textSize="15dp" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
