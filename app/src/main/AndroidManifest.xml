@@ -28,6 +28,13 @@
         <activity android:name=".HighScoreActivity" />
         <activity android:name=".ReturnActivity"/>
         <activity android:name=".ForkActivity"/>
+        <activity android:name=".Disclaimer"/>
+        <activity android:name=".Question1"/>
+        <activity android:name=".Question2"/>
+        <activity android:name=".Question3"/>
+        <activity android:name=".Question4"/>
+        <activity android:name=".Score"/>
+
     </application>
 
 </manifest>

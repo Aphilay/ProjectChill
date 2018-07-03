@@ -18,4 +18,8 @@ public class ForkActivity extends AppCompatActivity {
     public void mainMenuButton(View v){
         startActivity(new Intent(ForkActivity.this,MainMenu.class));
     }
+
+    public void SurveyButton(View v){
+        startActivity(new Intent(ForkActivity.this,Disclaimer.class));
+    }
 }
