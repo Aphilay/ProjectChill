@@ -26,6 +26,7 @@
         android:text="Survey"
         android:backgroundTint="#ffffff"
         tools:layout_editor_absoluteX="64dp"
+        android:onClick="SurveyButton"
         tools:layout_editor_absoluteY="450dp"
         />
 
